@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/casino-project-21/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/casino-project-21/assets/index-cdeb196a.css">
+    <link rel="stylesheet" href="/casino-project-21/assets/index-765958b0.css">
   </head>
   <body>
     <header class="header">Header</header>
@@ -72,7 +72,75 @@
   </div>
 </section>
 
-      <section class="rent-yacht">Rent a yacht</section>
+      <section class="rent-yacht container">
+  <div class="rent-container-form">
+    <h2 class="rent-title">Rent a yacht now</h2>
+    <div class="rent-section-form">
+      <form class="rent-form">
+        <div class="rent-form-field">
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Full Name"
+            required
+            class="rent-form-input"
+          />
+        </div>
+        <div class="rent-form-field">
+          <input
+            type="email"
+            name="user-email"
+            placeholder="Email"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            class="rent-form-input"
+          />
+        </div>
+        <div class="rent-form-field">
+          <input
+            type="tel"
+            name="user-tel;"
+            placeholder="Phone number"
+            required
+            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+            class="rent-form-input"
+          />
+        </div>
+        <div>
+          <textarea
+            type="submit"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Comment"
+            class="rent-form-textarea"
+          ></textarea>
+        </div>
+        <button type="submit" class="rent-btn">Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="rent-pic-container">
+    <picture>
+      <source
+        srcset="/casino-project-21/assets/desktop-1280-rent-a-yacht-img-8189065e.jpg 1x, /casino-project-21/assets/desktop-1280-rent-a-yacht-img@2x-6385e880.jpg 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="/casino-project-21/assets/tablet-rent-a-yacht-img-0a942617.jpg 1x, /casino-project-21/assets/tablet-rent-a-yacht-img@2x-898a245a.jpg 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/casino-project-21/assets/mobile-rent-a-yacht-img-3bbd6435.jpg 1x, /casino-project-21/assets/mobile-rent-a-yacht-img@2x-2e8c6b5e.jpg 2x"
+        media="(max-width:767px)"
+      />
+      <img
+        class="rent-img"
+        src="/casino-project-21/assets/mobile-rent-a-yacht-img-3bbd6435.jpg"
+        alt="yacht-on-water"
+      />
+    </picture>
+  </div>
+</section>
 
       <section class="reviews">
   <div class="container reviews-container">
