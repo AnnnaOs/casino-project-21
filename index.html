@@ -20,47 +20,123 @@
     />
     
     <script type="module" crossorigin src="/casino-project-21/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/casino-project-21/assets/index-9fa5505a.css">
+    <link rel="stylesheet" href="/casino-project-21/assets/index-b73b36dc.css">
   </head>
   <body>
     <header class="page-header">
-  <div class="container">
-    <div class="page-header-wrapper">
-      <nav class="header-nav">
-        <a class="header-logo" href="./index.html">yachtjet</a>
-        <ul class="header-menu">
-          <li class="header-menu-list-item">
-            <a class="header-menu-link about-accent" href="#about">about</a>
+  <div class="container page-header-wrapper">
+    <nav class="header-nav">
+      <a class="header-logo" href="./index.html">yachtjet</a>
+      <ul class="header-menu">
+        <li class="header-menu-list-item">
+          <a class="header-menu-link about-accent" href="#about">about</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-link" href="#yachts">yachts</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a class="header-menu-link" href="#reviews">reviews</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="mobile-header-menu-btn" data-modal-open>
+      <svg
+        class="mobile-header-burger-btn-icon"
+        width="28"
+        height="28"
+        aria-label="mobile-menu-icon"
+      >
+        <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-burger-btn"></use>
+      </svg>
+    </button>
+
+    <ul class="header-socials">
+      <li class="header-socials-list-item">
+        <a
+          class="header-socials-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          <svg
+            class="header-socials-icon"
+            width="24"
+            height="24"
+            aria-label="instagram-icon"
+          >
+            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-socials-list-item">
+        <a
+          class="header-socials-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          <svg
+            class="header-socials-icon"
+            width="24"
+            height="24"
+            aria-label="youtube-icon"
+          >
+            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-socials-list-item">
+        <a
+          class="header-socials-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          <svg
+            class="header-socials-icon"
+            width="24"
+            height="24"
+            aria-label="facebook-icon"
+          >
+            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--Modal Menu-->
+
+  <div class="mobile-menu-wrapper" data-modal>
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-header">
+        <a class="company-name" href="./index.html">yachtjet</a>
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn-icon" width="16" height="16">
+            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-item-link" href="#about">About</a>
           </li>
-          <li class="header-menu-list-item">
-            <a class="header-menu-link" href="#yachts">yachts</a>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-item-link" href="#yachts">Yachts</a>
           </li>
-          <li class="header-menu-list-item">
-            <a class="header-menu-link" href="#reviews">reviews</a>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-item-link" href="#reviews">Reviews</a>
           </li>
         </ul>
       </nav>
-  
-      <button type="button" class="mobile-header-menu-btn" data-modal-open>
-        <svg
-          class="mobile-header-burger-btn-icon"
-          width="28"
-          height="28"
-          aria-label="mobile-menu-icon"
-        >
-          <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-burger-btn"></use>
-        </svg>
-      </button>
-  
-      <ul class="header-socials">
-        <li class="header-socials-list-item">
+      <ul class="mobile-menu-social-links">
+        <li class="mobile-menu-social-item-link">
           <a
-            class="header-socials-link"
+            class="mobile-menu-social-item-link"
             href="https://www.instagram.com/goitclub/"
             target="_blank"
           >
             <svg
-              class="header-socials-icon"
+              class="mobile-menu-social-item-svg"
               width="24"
               height="24"
               aria-label="instagram-icon"
@@ -69,14 +145,14 @@
             </svg>
           </a>
         </li>
-        <li class="header-socials-list-item">
+        <li class="mobile-menu-social-item-link">
           <a
-            class="header-socials-link"
+            class="mobile-menu-social-item-link"
             href="https://www.youtube.com/c/GoIT"
             target="_blank"
           >
             <svg
-              class="header-socials-icon"
+              class="mobile-menu-social-item-svg"
               width="24"
               height="24"
               aria-label="youtube-icon"
@@ -85,14 +161,14 @@
             </svg>
           </a>
         </li>
-        <li class="header-socials-list-item">
+        <li class="mobile-menu-social-item-link">
           <a
-            class="header-socials-link"
+            class="mobile-menu-social-item-link"
             href="https://www.facebook.com/goITclub/"
             target="_blank"
           >
             <svg
-              class="header-socials-icon"
+              class="mobile-menu-social-item-svg"
               width="24"
               height="24"
               aria-label="facebook-icon"
@@ -103,80 +179,8 @@
         </li>
       </ul>
     </div>
-    </div>
-
-    <!--Modal Menu-->
-
-<div class="mobile-menu-wrapper" data-modal>
-  <div class="mobile-menu-container">
-    <div class="mobile-menu-header">
-      <a class="company-name" href="./index.html">yachtjet</a>
-      <button class="close-btn" type="button" data-modal-close>
-        <svg class="close-btn-icon" width="16" height="16">
-          <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-close-btn"></use>
-        </svg>
-      </button>
-    </div>
-    <nav class="mobile-nav">
-    <ul class="mobile-menu">
-      <li class="mobile-menu-item">
-        <a class="mobile-menu-item-link" href="#about">About</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a class="mobile-menu-item-link" href="#yachts">Yachts</a>
-      </li>
-      <li class="mobile-menu-item">
-        <a class="mobile-menu-item-link" href="#reviews">Reviews</a>
-      </li>
-    </ul>
-    </nav>
-    <ul class="mobile-menu-social-links">
-      <li class="mobile-menu-social-item-link">
-        <a
-          class="mobile-menu-social-item-link"
-          href="https://www.instagram.com/goitclub/"
-          target="_blank">
-          <svg
-            class="mobile-menu-social-item-svg"
-            width="24"
-            height="24"
-            aria-label="instagram-icon">
-            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu-social-item-link">
-        <a
-          class="mobile-menu-social-item-link"
-          href="https://www.youtube.com/c/GoIT"
-          target="_blank">
-          <svg
-            class="mobile-menu-social-item-svg"
-            width="24"
-            height="24"
-            aria-label="youtube-icon">
-            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-youtube"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="mobile-menu-social-item-link">
-        <a
-          class="mobile-menu-social-item-link"
-          href="https://www.facebook.com/goITclub/"
-          target="_blank">
-          <svg
-            class="mobile-menu-social-item-svg"
-            width="24"
-            height="24"
-            aria-label="facebook-icon">
-            <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
   </div>
-</div>
-  </header>
+</header>
 
 
     <main>
