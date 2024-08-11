@@ -40,7 +40,8 @@
       </ul>
     </nav>
 
-    <button type="button" class="mobile-header-menu-btn" data-modal-open>
+    <button type="button" class="mobile-header-menu-btn js-open-menu"  aria-expanded="false"
+    aria-controls="mobile-menu">
       <svg
         class="mobile-header-burger-btn-icon"
         width="28"
@@ -105,11 +106,11 @@
 
   <!--Modal Menu-->
 
-  <div class="mobile-menu-wrapper" data-modal>
+  <div class="mobile-menu-wrapper js-menu-container" id="mobile-menu">
     <div class="mobile-menu-container">
       <div class="mobile-menu-header">
         <a class="company-name" href="./index.html">yachtjet</a>
-        <button class="close-btn" type="button" data-modal-close>
+        <button class="close-btn js-close-menu" type="button">
           <svg class="close-btn-icon" width="16" height="16">
             <use href="/casino-project-21/assets/icons-a074c8e0.svg#icon-close-btn"></use>
           </svg>
@@ -541,7 +542,7 @@
   </div>
 </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
   <div class="container reviews-container">
     <h2 class="reviews-title">
       YachtJet take pride in providing the best possible service and experience
