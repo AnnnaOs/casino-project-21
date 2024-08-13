@@ -67,11 +67,7 @@
   .hero-section {
     max-width: 768px;
     padding: 280px 0 282px 0;
-    margin: 0 auto;
     background-image: url('/img/hero/tablet-hero-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -106,11 +102,7 @@
   .hero-section {
     max-width: 1280px;
     padding: 235px 0 215px 0;
-    margin: 0 auto;
     background-image: url('/img/hero/desktop-1280-hero-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2),

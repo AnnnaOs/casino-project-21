@@ -130,16 +130,20 @@
   }
 
   .header-socials-icon {
-    fill: rgba(27, 65, 75, 1);
+    fill: #1b414b;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .header-socials-link:hover > .header-socials-icon,
+  /* .header-socials-link:hover > .header-socials-icon,
   .header-socials-link:focus > .header-socials-icon {
     fill: rgba(6, 39, 48, 1);
+  } */
+
+  .header-socials-icon:hover,
+  .header-socials-icon:focus {
+    fill: #062730;
   }
 }
-
 /* Desktops (from 1280px) */
 
 @media screen and (min-width: 1280px) {
